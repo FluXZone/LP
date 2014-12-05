@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <script src="http://js.leapmotion.com/leap-0.4.2.js"></script>
+  </head>
+  <body>
+  </body>
+  <script type="text/javascript">
+    Leap.loop(function(frame) {
+      if (frame.pointables.length > 0)
+          console.log(frame.pointables);
+    });
+  </script>
+</html>
